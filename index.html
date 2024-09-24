@@ -10,7 +10,7 @@
 <body>
     <nav class="flex justify-around bg-slate-50 h-24 items-center">
         <div>
-            <button class="btn bg-lime-400 rounded-lg w-24 h-9 font-bold text-xl">Blog</button>
+            <button class="btn btn-ghost bg-lime-400 rounded-lg w-24 h-9 font-bold text-xl">Blog</button>
         </div>
         <div>
             <h1 class="font-bold text-xl">Donate Bangladesh</h1>
@@ -28,74 +28,108 @@
             
             
         
-            <button id="btn-history" class="btn rounded-lg w-36 h-11 font-bold text-xl border-solid border-2 border-slate-300">History</button>
+            <button id="btn-history" class="btn rounded-lg w-36 h-11 font-bold text-xl border-solid border-2 border-slate-300">History
+             
         </div>
 
         </div>
         <!-- button end -->
          <!-- card start -->
-        <div class="space-y-5">
-            <div class="border-solid border-2 border-slate-300 rounded-lg w-[1140px] mx-auto">
+        <div id="donate-money-form" class=" space-y-5 ">
+            <div class="border-solid border-2 border-slate-300 rounded-lg w-8/12 mx-auto">
                 <div class="hero">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="images/1724939205-34c99dc572de3063c338bcb2ac0a4217.jpg"
-                        class=" rounded-lg shadow-2xl w-1/2 h-96" />
+                        class=" rounded-lg shadow-2xl w-4/8 h-96" />
                       <div class="space-y-2">
                         <div id="show-donate-money1" class="text-xl bg-slate-200 w-32 h-11 rounded-lg flex items-center justify-center" >0 BDT</div>
                         <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="py-6">
                             The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
                         </p>
-                        <input type="text" id="input-donate-money1" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
-                        <button id="btn-donate-money1" class="btn bg-lime-400 font-bold w-full text-xl h-14">Donate Now</button>
+                        <input type="number" id="input-donate-money1" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
+                        
+
+                           <!-- Open the modal using ID.showModal() method -->
+                           <button id="btn-donate-money1" class="btn btn bg-lime-400 font-bold w-full text-xl h-14 " onclick="my_modal_5.showModal()">Donate Now</button>
+                           <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                             <div class="modal-box">
+                               <h3 class="text-2xl font-bold">Congrats!</h3>
+                               <p class="py-4">You Have Donated for Humankind</p>
+                               <h4 class="text-xl font-bold">Successfully</h4>
+                               <div class="modal-action">
+                                 <form method="dialog">
+                                   <!-- if there is a button in form, it will close the modal -->
+                                   <button class="btn">Close Confirmation</button>
+                                 </form>
+                               </div>
+                             </div>
+                           </dialog>
+                           
+                        
                       </div>
                     </div>
                   </div>
              </div>
              <!-- card-2 -->
-             <div class="border-solid border-2 border-slate-300 rounded-lg w-[1140px] mx-auto">
+             <div class="border-solid border-2 border-slate-300 rounded-lg w-8/12 mx-auto">
                 <div class="hero">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="images/Flood-Feni-AFP-aff3315d99f0172d80f7cb115784dfe9.jpg"
-                        class=" rounded-lg shadow-2xl w-1/2 h-96" />
+                        class=" rounded-lg shadow-2xl w-4/8 h-96" />
                       <div class="space-y-2">
-                        <div class="text-xl bg-slate-200 w-32 h-11 rounded-lg flex items-center justify-center">600 BDT</div>
+                        <div id="show-donate-money2" class="text-xl bg-slate-200 w-32 h-11 rounded-lg flex items-center justify-center">600</div>
                         <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
                         <p class="py-6">
                             Bangladesh Red Crescent Society is preparing post flood support for the flood victims. Among the activities, food and livelihoods support, water and sanitation and shelter repair assistance are some key areas. The Society is seeking assistance from the local organizations and philanthropists for possible support to implement the ongoing relief efforts. 
                         </p>
-                        <input type="text" id="input-donate-money1" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
-                        <button id="btn-donate-money2" class="btn bg-lime-400 font-bold w-full text-xl h-14">Donate Now</button>
-                      </div>
+                        <input type="number" id="input-donate-money2" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="btn-donate-money2" class="btn bg-lime-400 font-bold w-full text-xl h-14 " >Donate Now</button>
+                        </div>
                     </div>
                   </div>
              </div>
              <!-- card-3 -->
-             <div class="border-solid border-2 border-slate-300 rounded-lg w-[1140px] mx-auto">
+             <div class="border-solid border-2 border-slate-300 rounded-lg w-8/12 mx-auto">
                 <div class="hero">
                     <div class="hero-content flex-col lg:flex-row">
                       <img
                         src="images/4469156-474926398.jpg"
-                        class=" rounded-lg shadow-2xl w-1/2 h-96" />
+                        class=" rounded-lg shadow-2xl w-4/8 h-96" />
                       <div class="space-y-2">
-                        <div class="text-xl bg-slate-200 w-32 h-11 rounded-lg flex items-center justify-center">2400 BDT</div>
+                        <div id="show-donate-money3" class="text-xl bg-slate-200 w-32 h-11 rounded-lg flex items-center justify-center">2400 BDT</div>
                         <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
                         <p class="py-6">
                             For those who are undergoing treatment in various private hospitals, the government has requested those private hospitals to waive the fee or if that is not possible to keep the fee minimum, reads a notification published by the government on 15 August.The Health Services Division of the Ministry of Health and Family Welfare thanked the private hospitals who have already waived or reduced the fees.
                         </p>
-                        <input type="text" id="input-donate-money3" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
-                        <button id="btn-donate-money3" class="btn bg-lime-400 font-bold w-full text-xl h-14">Donate Now</button>
+                        <input type="number" id="input-donate-money3" class="border-2 border-slate-300 w-full h-11 rounded-lg pl-3" placeholder="Write Donation Amount">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="btn-donate-money3" class="btn bg-lime-400 font-bold w-full text-xl h-14 " >Donate Now</button>
                       </div>
                     </div>
                   </div>
              </div>
-        </div>
+             </div>
 
-         <!-- card end -->
+         
+
+         <!-- card-end -->
+          <!-- history start -->
+          <div id="donate-history" class=" donate-container hidden text-xl font-bold ">
+            <div id="donation-content" class="space-y-7 mx-auto w-1/2">
+              
+
+            </div>
+           </div>
+          <!-- history end -->
+          
 
     </main>
     <script src="js/donatemoney.js"></script>
+    <script src="js/utilitize.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
