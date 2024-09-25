@@ -4,11 +4,11 @@ document.getElementById('btn-donate-money1').addEventListener('click', function(
     event.preventDefault();
     const donateMoney = getInputFieldValueById('input-donate-money1');
     if(isNaN(donateMoney) || donateMoney <= 0){
+      document.getElementById('my_modal_5').close()
         alert('Invalid Donation Amount');
         return;
-         
-    
-    }
+        
+      }
     const balance = getTextFieldValueById('account-balance');
     
     const newBalance = balance + donateMoney;
@@ -40,6 +40,7 @@ document.getElementById('btn-donate-money2').addEventListener('click', function(
     
     const donateMoney = getInputFieldValueById('input-donate-money2');
     if(isNaN(donateMoney) || donateMoney <= 0){
+      document.getElementById('my_modal_5').close()
         alert('Invalid Donation Amount');
         return;
     }
@@ -52,6 +53,7 @@ document.getElementById('btn-donate-money2').addEventListener('click', function(
     console.log(newBalance);
     document.getElementById('account-balance').innerText = newBalance;
     console.log(balance);
+
     const showMoney = getTextFieldValueById('show-donate-money2');
     const newShowMoney = showMoney + donateMoney;
     document.getElementById('show-donate-money2').innerText = newShowMoney;
@@ -83,9 +85,14 @@ document.getElementById('btn-donate-money3').addEventListener('click', function(
     console.log(newBalance);
     document.getElementById('account-balance').innerText = newBalance;
     if(isNaN(donateMoney) || donateMoney <= 0){
+      document.getElementById('my_modal_5').close()
         alert('Invalid Donation Amount');
         return;
-    }
+      }
+    
+     
+  
+    
     console.log(balance);
 
     const showMoney = getTextFieldValueById('show-donate-money3');
